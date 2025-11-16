@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# C51/Keil
+*.lst
+*.obj
+*.hex
+*.uvguix.*
+*.uvoptx
+Listings/
+Objects/
+build.log
+
+# ESP32
+.cache/
+sdkconfig.old
+managed_components/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

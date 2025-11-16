@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 音频控制</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ESP32 温度监控与音频控制</h1>
+            <div id="connection-status" class="status disconnected">未连接</div>
+        </header>
+
+        <main>
+            <!-- 设备列表组件 -->
+            <device-list></device-list>
+
+            <!-- 温度警告组件 -->
+            <temperature-alert></temperature-alert>
+
+            <!-- TTS 语音合成组件 -->
+            <tts-synthesizer></tts-synthesizer>
+
+            <!-- 音频控制组件 -->
+            <audio-controller></audio-controller>
+
+            <!-- 实时监控组件 -->
+            <monitor-panel></monitor-panel>
+        </main>
+
+        <footer>
+            <p>ESP32 Temperature Monitor & Audio Control System v0.1</p>
+        </footer>
+    </div>
+
+    <!-- 加载Web Components -->
+    <script type="module" src="components/device-list.js?v=5"></script>
+    <script type="module" src="components/temperature-alert.js?v=5"></script>
+    <script type="module" src="components/tts-synthesizer.js?v=5"></script>
+    <script type="module" src="components/audio-controller.js?v=5"></script>
+    <script type="module" src="components/monitor-panel.js?v=5"></script>
+    <script type="module" src="utils/audio-processor.js?v=5"></script>
+    <script type="module" src="app.js?v=5"></script>
+</body>
+</html>
+

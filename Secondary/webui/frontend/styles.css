@@ -1,0 +1,278 @@
+/***
+ * @file styles.css
+ * @author bearbox <apuirbox@gmail.com>
+ * @date 2025-11-05
+ * @brief 全局样式表
+ * 
+ * @version 0.1
+ * 
+ * @copyright Copyright (c) 2025 by AmBearBox, All Rights Reserved.
+ * 
+ * @lastEditors bearbox <apuirbox@gmail.com>
+ * @lastEditTime 2025-11-05
+ * @filePath styles.css
+ * @projectType Frontend
+ */
+
+/* ==================== 全局样式 ==================== */
+:root {
+    --primary-color: #0f172a;
+    --primary-hover: #1e293b;
+    --success-color: #059669;
+    --error-color: #dc2626;
+    --warning-color: #d97706;
+    --bg-color: #f1f5f9;
+    --card-bg: #ffffff;
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --border-color: #cbd5e1;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.06);
+    --radius-sm: 2px;
+    --radius-md: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Microsoft YaHei', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ==================== 头部样式 ==================== */
+header {
+    background-color: var(--card-bg);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border-color);
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+}
+
+.status {
+    padding: 6px 16px;
+    border: 1px solid;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.status.connected {
+    background-color: #f0fdf4;
+    color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.status.disconnected {
+    background-color: #fef2f2;
+    color: var(--error-color);
+    border-color: var(--error-color);
+}
+
+/* ==================== 主内容区域 ==================== */
+main {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ==================== 卡片样式 ==================== */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 24px;
+    transition: border-color 0.2s ease;
+}
+
+.card:hover {
+    border-color: var(--text-secondary);
+}
+
+.card h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* ==================== 按钮样式 ==================== */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.02em;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button:disabled {
+    background-color: #e2e8f0;
+    border-color: #e2e8f0;
+    color: var(--text-secondary);
+    cursor: not-allowed;
+    transform: none;
+}
+
+button.success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+button.success:hover {
+    background-color: #047857;
+    border-color: #047857;
+}
+
+button.danger {
+    background-color: var(--error-color);
+    border-color: var(--error-color);
+}
+
+button.danger:hover {
+    background-color: #b91c1c;
+    border-color: #b91c1c;
+}
+
+/* ==================== 输入框样式 ==================== */
+input[type="file"] {
+    display: none;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 9px 18px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.15s ease;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.file-input-label:hover {
+    border-color: var(--primary-color);
+    background-color: var(--bg-color);
+    transform: translateY(-1px);
+}
+
+/* ==================== 列表样式 ==================== */
+.device-item {
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.15s ease;
+    background-color: var(--card-bg);
+}
+
+.device-item:hover {
+    border-color: var(--text-primary);
+    background-color: #fafafa;
+}
+
+.device-info {
+    flex: 1;
+}
+
+.device-name {
+    font-weight: 500;
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.device-ip {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-family: 'Monaco', 'Courier New', monospace;
+}
+
+/* ==================== 页脚样式 ==================== */
+footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 12px;
+    letter-spacing: 0.03em;
+}
+
+/* ==================== TTS 组件样式 ==================== */
+.tts-card {
+    grid-column: 1 / -1;
+}
+
+.text-input {
+    transition: border-color 0.15s ease;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.text-input:disabled {
+    background-color: var(--bg-color);
+    cursor: not-allowed;
+}
+
+/* ==================== 工具类 ==================== */
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-4 { margin-bottom: 16px; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.gap-2 { gap: 8px; }
+.gap-4 { gap: 16px; }
+

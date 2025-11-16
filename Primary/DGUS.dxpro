@@ -1,0 +1,33 @@
+{
+  "Version": "V8.2.1",
+  "Width": 800,
+  "Height": 480,
+  "NextID": 48,
+  "Auto": false,
+  "BootAnimation": {
+    "Animation": null,
+    "SP": 0,
+    "DisplayTime": 0
+  },
+  "Pages": [
+    {
+      "Id": 1,
+      "Name": "背景图"
+    },
+    {
+      "Id": 2,
+      "Name": "背景图2"
+    },
+    {
+      "Id": 3,
+      "Name": "背景图3"
+    },
+    {
+      "Id": 4,
+      "Name": "背景图4"
+    }
+  ],
+  "Keyboards": [],
+  "UICFonts": [],
+  "SlideIconPages": []
+}

@@ -1,0 +1,260 @@
+{
+  "Background": "背景图.bmp",
+  "Widgets": [
+    {
+      "Base": {
+        "X": 478,
+        "Y": 106,
+        "W": 88,
+        "H": 66,
+        "Type": "DynamicData",
+        "Name": "DynamicData",
+        "Lock": 1,
+        "ID": 20
+      },
+      "Extends": {
+        "Data_Type": 0,
+        "ND": "BasicData",
+        "SP": 65535,
+        "Auto_SP": 1,
+        "VP": 20480,
+        "Bound_ID": 0,
+        "SV": "0",
+        "V_Type": 0,
+        "Font0_ID": 0,
+        "Font_Hor": 24,
+        "Font_Ver": 24,
+        "NUM_I": 3,
+        "NUM_F": 0,
+        "Font1_ID": 0,
+        "HOR_Dis": 0,
+        "VER_Dis": 0,
+        "Colour1": 0,
+        "Colour0": 0,
+        "Len_Text": 0,
+        "Format_Date": null,
+        "Str_Code": null,
+        "En_BCD": 0,
+        "Icons": null,
+        "Filter_Set": 0,
+        "Layer_Mode": 0,
+        "ICON_Gamma": 0,
+        "PIC_Gamma": 0,
+        "ALN_Mode": 1,
+        "V_Min": 0,
+        "V_Max": 0,
+        "NUM_Digit": 0,
+        "Display_Mode": 0,
+        "Font_Hor0": 0,
+        "Font_Ver0": 0,
+        "Display_Unit": null,
+        "Display_InvZ": 0,
+        "HOR_Dis_Adj": 0
+      }
+    },
+    {
+      "Base": {
+        "X": 567,
+        "Y": 106,
+        "W": 57,
+        "H": 65,
+        "Type": "DynamicData",
+        "Name": "DynamicData",
+        "Lock": 1,
+        "ID": 21
+      },
+      "Extends": {
+        "Data_Type": 0,
+        "ND": "BasicData",
+        "SP": 65535,
+        "Auto_SP": 1,
+        "VP": 20481,
+        "Bound_ID": 0,
+        "SV": "0",
+        "V_Type": 0,
+        "Font0_ID": 0,
+        "Font_Hor": 24,
+        "Font_Ver": 24,
+        "NUM_I": 1,
+        "NUM_F": 0,
+        "Font1_ID": 0,
+        "HOR_Dis": 0,
+        "VER_Dis": 0,
+        "Colour1": 0,
+        "Colour0": 0,
+        "Len_Text": 0,
+        "Format_Date": null,
+        "Str_Code": null,
+        "En_BCD": 0,
+        "Icons": null,
+        "Filter_Set": 0,
+        "Layer_Mode": 0,
+        "ICON_Gamma": 0,
+        "PIC_Gamma": 0,
+        "ALN_Mode": 0,
+        "V_Min": 0,
+        "V_Max": 0,
+        "NUM_Digit": 0,
+        "Display_Mode": 0,
+        "Font_Hor0": 0,
+        "Font_Ver0": 0,
+        "Display_Unit": null,
+        "Display_InvZ": 0,
+        "HOR_Dis_Adj": 0
+      }
+    },
+    {
+      "Base": {
+        "X": 556,
+        "Y": 121,
+        "W": 28,
+        "H": 42,
+        "Type": "StaticText2",
+        "Name": "StaticText2",
+        "Lock": 1,
+        "ID": 22
+      },
+      "Extends": {
+        "V_Max": 1,
+        "TextStates": [
+          {
+            "Value": 1,
+            "Text": "."
+          }
+        ],
+        "IsMultilingual": 0,
+        "VP": 0,
+        "Bound_ID": 0,
+        "Font_ID": "宋体",
+        "Font_Hor": 26,
+        "Color": 0,
+        "Line_Num": 0,
+        "H_Align": 0,
+        "V_Align": 0,
+        "Bold": 1,
+        "Italic": 0,
+        "Underline": 0
+      }
+    },
+    {
+      "Base": {
+        "X": 605,
+        "Y": 108,
+        "W": 91,
+        "H": 68,
+        "Type": "StaticText2",
+        "Name": "StaticText2",
+        "Lock": 1,
+        "ID": 23
+      },
+      "Extends": {
+        "V_Max": 1,
+        "TextStates": [
+          {
+            "Value": 1,
+            "Text": "℃"
+          }
+        ],
+        "IsMultilingual": 0,
+        "VP": 0,
+        "Bound_ID": 0,
+        "Font_ID": "宋体",
+        "Font_Hor": 40,
+        "Color": 0,
+        "Line_Num": 0,
+        "H_Align": 0,
+        "V_Align": 0,
+        "Bold": 1,
+        "Italic": 0,
+        "Underline": 0
+      }
+    },
+    {
+      "Base": {
+        "X": 86,
+        "Y": 73,
+        "W": 315,
+        "H": 362,
+        "Type": "KeyBack",
+        "Name": "KeyBack",
+        "Lock": 1,
+        "ID": 28
+      },
+      "Extends": {
+        "ND": "PressFan",
+        "VP": 22136,
+        "Bound_ID": 0,
+        "VP_Mode": 0,
+        "WriteBit": 0,
+        "Pic_Next": 3,
+        "Pic_On": -1,
+        "Button_Icon": null,
+        "KV": 1,
+        "P_Time": 1,
+        "Auto_Up": 1,
+        "Voice_ID": 0,
+        "Keying_KV": 0
+      }
+    },
+    {
+      "Base": {
+        "X": 460,
+        "Y": 244,
+        "W": 238,
+        "H": 190,
+        "Type": "KeyBack",
+        "Name": "KeyBack",
+        "Lock": 1,
+        "ID": 30
+      },
+      "Extends": {
+        "ND": "PressBEEP",
+        "VP": 26505,
+        "Bound_ID": 0,
+        "VP_Mode": 0,
+        "WriteBit": 0,
+        "Pic_Next": 4,
+        "Pic_On": -1,
+        "Button_Icon": null,
+        "KV": 1,
+        "P_Time": 1,
+        "Auto_Up": 1,
+        "Voice_ID": 0,
+        "Keying_KV": 0
+      }
+    },
+    {
+      "Base": {
+        "X": 16,
+        "Y": 14,
+        "W": 99,
+        "H": 33,
+        "Type": "StaticText2",
+        "Name": "StaticText2",
+        "Lock": 1,
+        "ID": 44
+      },
+      "Extends": {
+        "V_Max": 1,
+        "TextStates": [
+          {
+            "Value": 1,
+            "Text": "都没按下"
+          }
+        ],
+        "IsMultilingual": 0,
+        "VP": 0,
+        "Bound_ID": 0,
+        "Font_ID": "幼圆",
+        "Font_Hor": 24,
+        "Color": 0,
+        "Line_Num": 0,
+        "H_Align": 0,
+        "V_Align": 0,
+        "Bold": 0,
+        "Italic": 0,
+        "Underline": 0
+      }
+    }
+  ]
+}
